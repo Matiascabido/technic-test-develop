@@ -1,3 +1,3 @@
 # UBER TEST
 
-This is a uber logic replika
+Una prueba técnica de Uber para programadores, con JavaScript.
