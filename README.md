@@ -55,20 +55,14 @@ The cost for the ride in this car would be $15, which you can afford, but "UberP
 
 ## Third Test ##
 
-En la fabrica de Papá Noél, se acerca el dia especial... y todavia tenemos un monton de cosas por contar.
-Por suerte a Mark Zucktheelf se le ha ocurrido crear una funcion que permite agrupar un array, 
-que puede ser de valores u objetos, a travez ade una función o de una propiedad.
-Nos traen un monton de ejemplos:
+At Santa's factory, the special day is approaching... 
+and we still have a lot of things to count. 
+Luckily, Mark Zucktheelf came up with an idea to create a function that allows us to group an array,
+which can be of values or objects, through a function or a property. They bring us a lot of examples:
 
-groupBy([6.1, 4.2, 6.3], Math.floor)
-groupBy(['one', 'two', 'three'], 'length')
-groupBy([{age: 23}, { age: 24}], 'age')
-groupBy(
-  [1397629141184, 1363223700000],
-  timestamp => new Date(timestamp).getFullYear()
-)
+groupBy([6.1, 4.2, 6.3], Math.floor) => { 6: [6.1, 6.3], 4: [4.2]}
+groupBy(['one', 'two', 'three'], 'length') => { 3: { 'one', 'two'}, 5: { 'length'}}
 
-Como ves, la funcion groupBy recibe una colección (array) y una
-función o una propiedad, y devuelve un objeto con claves que son los valores de la funcion ejecutada
-pasando como argumento cada elemento o de la propiedad por cada elemento.
-Luego los valores son un array de los valores que tengan la misma llave.
+As you can see, the groupBy function takes a collection (array) and a function or a property, 
+and returns an object with keys that are the values of the function executed by passing each element or the property for each element. 
+Then, the values are an array of the values that have the same key.
